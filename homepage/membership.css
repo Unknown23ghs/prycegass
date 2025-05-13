@@ -1,0 +1,126 @@
+/* Base styles */
+:where([class^="ri-"])::before { 
+    content: "\f3c2"; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+/* Form elements */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Custom styles */
+.header-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.membership-card {
+    transition: transform 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    transition: all 0.3s ease;
+}
+
+.benefit-icon:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.plan-option {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.plan-option:hover {
+    border-color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.02);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #ff0000;
+    color: white;
+    padding: 0.625rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    transform: translateY(-1px);
+}
+
+/* Social media icons */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Footer links */
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ff0000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .membership-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animation for radio buttons */
+.radio-button {
+    transition: all 0.3s ease;
+}
+
+.radio-button:checked {
+    border-color: #ff0000;
+    background-color: #ff0000;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 0, 0, 0.8);
+} 

@@ -1,0 +1,352 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.social-login-inline {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    padding: 0.7rem 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    margin-bottom: 0;
+}
+
+.gmail-btn {
+    background: #fff;
+    color: #db4437;
+    border: 1px solid #db4437;
+}
+.gmail-btn:hover {
+    background: #db4437;
+    color: #fff;
+}
+.gmail-btn i {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.facebook-btn {
+    background: #1877f3;
+    color: #fff;
+    border: 1px solid #1877f3;
+}
+.facebook-btn:hover {
+    background: #145db2;
+}
+.facebook-btn i {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.social-login-inline {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.social-login-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.or-text {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.gmail-btn {
+    background: #fff;
+    color: #db4437;
+    border: 1px solid #db4437;
+}
+.gmail-btn:hover {
+    background: #db4437;
+    color: #fff;
+}
+.gmail-btn i {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.facebook-btn {
+    background: #1877f3;
+    color: #fff;
+    border: 1px solid #1877f3;
+}
+.facebook-btn:hover {
+    background: #145db2;
+}
+.facebook-btn i {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.social-login-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.or-text {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-login-corner {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    z-index: 10;
+}
+
+.social-login-corner .social-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+.btn.btn-primary {
+    background: #007bff;
+}
+
+.btn.btn-primary:hover {
+    background: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.password-strength {
+    margin-top: 0.5rem;
+    height: 4px;
+    background: #eee;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.password-strength-bar.weak {
+    background-color: #ff4444;
+    width: 33.33%;
+}
+
+.password-strength-bar.medium {
+    background-color: #ffbb33;
+    width: 66.66%;
+}
+
+.password-strength-bar.strong {
+    background-color: #00C851;
+    width: 100%;
+}
+
+/* Terms and conditions checkbox */
+.terms-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.terms-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.terms-group label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Responsive adjustments for signup form */
+@media screen and (max-width: 480px) {
+    .login-container {
+        padding: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .input-group input {
+        padding: 0.7rem 1rem 0.7rem 2.5rem;
+    }
+}
+
+/* Form validation styles */
+.input-group input:invalid {
+    border-color: #ff4444;
+}
+
+.input-group input:valid {
+    border-color: #00C851;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.error-message {
+    background: #ffeaea;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+}
+.success-message {
+    background: #eaffea;
+    color: #007b1e;
+    border: 1px solid #007b1e;
+}
+
+/* Password match indicator */
+.password-match {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    color: #ff4444;
+}
+
+.password-match.valid {
+    color: #00C851;
+}
